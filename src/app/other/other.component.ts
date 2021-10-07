@@ -7,11 +7,7 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./other.component.css'],
 })
 export class OtherComponent implements OnInit {
-  constructor(private route: Router, private router: ActivatedRoute) {}
+  constructor() {}
 
   ngOnInit(): void {}
-
-  onGoSomewhere() {
-    this.route.navigate(['new'], { relativeTo: this.router });
-  }
 }
